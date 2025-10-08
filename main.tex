@@ -1,0 +1,255 @@
+\documentclass[a4paper,12pt]{report}
+% XeTeX/tectonic build: use fontspec + polyglossia (do not load inputenc/babel)
+\usepackage[table]{xcolor}
+\usepackage{graphicx}
+\usepackage{titlesec}
+\usepackage{fancyhdr}
+\usepackage{geometry}
+\usepackage{setspace}
+\usepackage{tocloft}
+\usepackage{hyperref}
+\usepackage{polyglossia}
+\setdefaultlanguage{thai}
+\setotherlanguage{english}
+\usepackage{array}
+
+\geometry{margin=1in}
+\setlength{\parindent}{2em}
+\setlength{\parskip}{0pt} 
+\doublespacing
+
+% Define chapter title format
+\titleformat{\chapter}[display]
+  {\normalfont\Large\bfseries\centering}{บทที่ \thechapter}{1ex}{\Large}
+
+% Define section and subsection
+% Section title: Large, bold, with spacing before/after
+\titleformat{\section}
+  {\large\bfseries}   % Font style
+  {\thesection}       % Section number
+  {1em}               % Space between number and title
+  {}                  % Before-code
+
+% Subsection title: Normal size
+\titleformat{\subsection}
+  {\normalsize\bfseries}
+  {\thesubsection}
+  {1em}
+  {}
+
+% Header and footer
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot[C]{\thepage}
+
+% thai language support
+\usepackage{fontspec}
+\setmainfont[
+  Path = ./fonts/,                  % Path to the fonts folder
+  UprightFont = THSarabun,           % Regular (upright) font
+  BoldFont = THSarabun-Bold,         % Bold font
+  ItalicFont = THSarabun-Italic,     % Italic font
+  BoldItalicFont = THSarabun-BoldItalic, % Bold-Italic font
+  Scale = 1.5
+]{THSarabun}
+% Explicitly bind Thai and Latin/English fonts for polyglossia
+\newfontfamily\thaifont[
+  Path = ./fonts/,
+  UprightFont = THSarabun,
+  BoldFont = THSarabun-Bold,
+  ItalicFont = THSarabun-Italic,
+  BoldItalicFont = THSarabun-BoldItalic,
+  Script=Thai
+]{THSarabun}
+\newfontfamily\englishfont[
+  Path = ./fonts/,
+  UprightFont = THSarabun,
+  BoldFont = THSarabun-Bold,
+  ItalicFont = THSarabun-Italic,
+  BoldItalicFont = THSarabun-BoldItalic
+]{THSarabun}
+\newfontfamily\latinfont[
+  Path = ./fonts/,
+  UprightFont = THSarabun,
+  BoldFont = THSarabun-Bold,
+  ItalicFont = THSarabun-Italic,
+  BoldItalicFont = THSarabun-BoldItalic
+]{THSarabun}
+\XeTeXlinebreaklocale "th"
+\XeTeXlinebreakskip = 0pt plus 1pt
+
+% For dotted underline
+\usepackage{tikz}
+\newcommand{\uloosdot}[1]{%
+    \tikz[baseline=(todotted.base)]{
+        \node[inner sep=1pt,outer sep=0pt] (todotted) {#1};
+        \draw[loosely dotted] (todotted.south west) -- (todotted.south east);
+    }%
+}%
+
+% Thai page number
+% Thai letters as page numbers
+\newcommand{\thaipagenum}{
+  \ifcase\value{page}
+    \or ก%
+    \or ข%
+    \or ค%
+    \or ง%
+    \or จ%
+    \or ฉ%
+    \or ช%
+    \or ซ%
+    \or ฌ%
+    \else หน้า~\thepage % fallback
+  \fi
+}
+
+\usepackage{tocbibind}
+\usepackage{indentfirst}
+\emergencystretch=3em
+
+\begin{document}
+
+% Cover Page
+\begin{titlepage}
+    \thispagestyle{empty}
+    \vspace*{\fill}  % Push content to vertical center
+    \begin{center}
+        \textbf{\Large รายงานปฏิบัติงานสหกิจศึกษา}\\[0.5cm]
+        \textbf{\Large Japan Advanced Instituted of Science and Technology}\\[3cm]
+        \Large \textbf{KGs-Augmented Test suite generation via Re-construct accident report}\\
+        \textbf{\Large นาย ชัยภัทร ใจน่าน}\\
+        \textbf{\Large 650510606}\\[3cm]
+        \textbf{\large สหกิจศึกษานี้เป็นส่วนหนึ่งของการศึกษาหลักสูตรปริญญาวิทยาศาสตรบัณฑิต} \\
+        \textbf{\large สาขาวิชาวิทยาการคอมพิวเตอร์}\\
+        \textbf{\large คณะวิทยาศาสตร์ มหาวิทยาลัยเชียงใหม่}\\
+        \textbf{\large ปีการศึกษา 2565}
+    \end{center}
+    \vspace*{\fill} 
+\end{titlepage}
+
+% Approval Page
+\newpage
+\clearpage
+\thispagestyle{empty}
+\setcounter{page}{0}
+
+\begin{center}
+    \large \textbf{รายงานปฏิบัติงานสหกิจศึกษา}\\[0.5cm]
+    \textbf{(KGs-Augmented Test suite generation via Re-construct accident report)}\\[3cm]
+    \normalsize นาย ชัยภัทร ใจน่าน\\
+    650510606\\[3cm]
+    สหกิจศึกษานี้เป็นส่วนหนึ่งของการศึกษาหลักสูตรปริญญาวิทยาศาสตรบัณฑิต \\
+    สาขาวิชาวิทยาการคอมพิวเตอร์\\
+    คณะวิทยาศาสตร์ มหาวิทยาลัยเชียงใหม่\\
+    ปีการศึกษา 2565\\[2cm]
+    \normalsize คณะกรรมการสอบสหกิจศึกษา\\[1cm]
+    \begin{tabular}{c l}
+        \uloosdot{\phantom{xxxxxxxxxxxxxxxxxxxxxxxxxxx}} & ประธานกรรมการ \\
+        ( ผศ.ดร.อารีรัตน์ ตรงรัศมีทอง ) & \\
+         & \\
+        \uloosdot{\phantom{xxxxxxxxxxxxxxxxxxxxxxxxxxx}} & กรรมการ \\
+        ( ผศ.ดร.เสมอแข สมหอม ) & \\
+    \end{tabular} \\[1cm]
+    วันที่ \uloosdot{\phantom{xxx}} เดือน \uloosdot{\phantom{xxxxxxxxx}} พ.ศ. \uloosdot{\phantom{xxxxxx}}
+\end{center}
+
+\newpage
+\clearpage
+\thispagestyle{empty}
+\setcounter{page}{0}
+หนังสือยิมยอมให้ข้อมูลเพื่อการศึกษา
+
+\newpage
+\clearpage
+\renewcommand{\thepage}{\thaipagenum}
+\setcounter{page}{1}
+
+% Acknowledgements
+\chapter*{กิตติกรรมประกาศ}
+\addcontentsline{toc}{chapter}{กิตติกรรมประกาศ}
+\paragraph{} ข้าพเจ้าขอขอบพระคุณอาจารย์ที่ปรึกษาสหกิจศึกษา ผศ.ดร.รัศมีทิพย์ วิตา ที่ได้ให้คำแนะนำ
+และช่วยแก้ไขปัญหาต่าง ๆ ตลอดระยะเวลาการทำงาน
+\begin{flushright}
+    นาย ชัยภัทร ใจน่าน\\
+    650510606
+\end{flushright}
+% (insert acknowledgements here)
+
+% Abstract
+{
+\cleardoublepage% Move to first page of new chapter
+\let\clearpage\relax% Don't allow page break
+\noindent
+\begin{tabular}{l p{10cm}}
+    \textbf{หัวข้อสหกิจศึกษา} & การสร้างชุดทดสอบเสริมด้วย Knowledge Graphs ผ่านการสร้างรายงานอุบัติเหตุซ้ำ \vspace{0.2cm} \\
+    \textbf{สถานประกอบการ} & Japan Advanced Instituted of Science and Technology \vspace{0.2cm}\\
+    \textbf{ผู้ดำเนินการศึกษา} & ชัยภัทร ใจน่าน (Chaipat Jainan) \vspace{0.2cm}\\
+    \textbf{หลักสูตร} & วิทยาศาสตรบัณฑิต สาขาวิทยาการคอมพิวเตอร์ \vspace{0.2cm}\\
+    \textbf{อาจารย์ที่ปรึกษาสหกิจ} & ผู้ช่วยศาสตราจารย์ ดร.รัศมีทิพย์ วิตา \vspace{0.2cm}\\
+\end{tabular}
+
+\chapter*{บทคัดย่อ}
+\addcontentsline{toc}{chapter}{บทคัดย่อ}
+
+\paragraph{}
+งานวิจัยนี้มีวัตถุประสงค์เพื่อแก้ไขปัญหาด้านความน่าเชื่อถือและประสิทธิภาพในการสร้างชุดทดสอบสำหรับระบบขับขี่อัตโนมัติ (ADS) จากรายงานอุบัติเหตุจริง แม้ว่าโมเดลภาษาขนาดใหญ่ (LLM) จะมีศักยภาพในการสร้างสถานการณ์จำลอง แต่การใช้งานโดยตรงยังขาดกลไกในการมุ่งเน้นไปยังกรณีขอบเขต (Edge-Case) ที่ชัดเจน ซึ่งส่งผลให้เกิดการสร้างสถานการณ์จำลองที่ไม่จำเป็นจำนวนมาก งานวิจัยจึงนำเสนอกรอบการทำงานสำหรับการสร้างชุดทดสอบที่น่าเชื่อถือและมุ่งเน้นเป้าหมาย โดยใช้ Schema-guided LLM ในการสกัดข้อมูลอุบัติเหตุที่มีโครงสร้าง ก่อนนำไปสร้างเป็น Knowledge Graph (KG) เพื่อใช้เป็นโครงสร้างเชิงความหมายที่ช่วยในการอนุมานข้อมูลและความต่อเนื่องเชิงเหตุผล หัวใจสำคัญของกรอบการทำงานนี้คือการบูรณาการ Operational Design Domain (ODD) ที่กำหนดโดย JAMA เข้าไปใน KG เพื่อใช้เป็นหลักเกณฑ์ในการกรองและควบคุมการสร้าง Scenario ให้มุ่งเน้นการค้นพบ Edge-Case ใหม่ ๆ ได้อย่างรวดเร็วและมีประสิทธิภาพ ผลลัพธ์ที่ได้คือก้าวสำคัญในการพัฒนาวิธีการสร้างชุดทดสอบที่มีความแม่นยำสูง ซึ่งช่วยลดจำนวนครั้งในการสร้างเหตุการณ์จำลองซ้ำ และสนับสนุนการรับรองความปลอดภัยของระบบ ADS ได้อย่างเป็นรูปธรรม
+}
+
+
+\newpage
+{
+\cleardoublepage% Move to first page of new chapter
+\let\clearpage\relax% Don't allow page break
+\noindent
+\begin{tabular}{l l c}
+    \textbf{Title} & KGs-Augmented Test suite generation via Re-construct accident report & \vspace{0.2cm}\\
+    \textbf{Company} & Japan Advanced Instituted of Science and Technology & \vspace{0.2cm}\\
+    \textbf{Name} & Chaipat Jainan & \vspace{0.2cm}\\
+    \textbf{ID} & 650510606 & \vspace{0.2cm}\\
+    \textbf{Degree} & Bachelor of Science in Computer Science & \vspace{0.2cm}\\
+    \textbf{Advisor} & Asst. Prof. Ratsameetip Wita & \vspace{0.2cm}\\
+\end{tabular}
+
+\chapter*{Abstract}
+\addcontentsline{toc}{chapter}{Abstract}
+
+\paragraph{}
+Ensuring the safety of Autonomous Driving Systems (ADS) necessitates rigorous testing using simulated scenarios derived from real-world accident reports. While Large Language Models (LLMs) offer a promising approach for generating these scenarios, their direct application in discovering elusive edge-cases is often inefficient and unreliable. This inefficiency stems primarily from the inconsistent nature of the source reports and the LLMs' tendency to generate numerous irrelevant scenarios, leading to an unnecessarily high number of reconstruction efforts before a novel test case is found.
+
+To address this challenge, this study proposes a novel KGs-Augmented Testsuite Generator Framework designed to create reliable and goal-oriented test suites. The framework employs a schema-guided LL to accurately extract structured accident data from unstructured reports. This data is then modeled as a Knowledge Graph (KG), which serves as a semantic backbone, enabling robust inference of missing information and maintaining the causal continuity between events. Crucially, the framework integrates the Operational Design Domain (ODD), utilizing constraints defined by JAMA, directly into the KG structure.
+
+The integration of ODD acts as a powerful filter and guideline, controlling the scenario generation process to focus exclusively on test cases that violate or push the boundaries of the defined operational limits. This targeted approach is the key to the framework's effectiveness, which aims to significantly reduce the number of reconstructed scenarios required to discover a new, challenging edge-case. The resulting structured scenarios are highly reliable and compliant with industry standards (e.g., ASAM OpenSCENARIO), marking a substantial improvement in the efficiency and quality of ADS safety evaluation.
+}
+\newpage
+% Table of Contents
+\renewcommand{\contentsname}{สารบัญ}
+\renewcommand{\listfigurename}{สารบัญรูป}
+\renewcommand{\listtablename}{สารบัญตาราง}
+\tableofcontents
+\newpage
+\listoffigures
+\newpage
+\listoftables
+
+% Revert back to arabic page number
+\cleardoublepage
+\renewcommand{\thepage}{\arabic{page}}
+\setcounter{page}{1}
+\pagenumbering{arabic}
+
+% Chapters
+\renewcommand{\figurename}{รูปที่}
+\renewcommand{\tablename}{ตารางที่}
+\renewcommand\bibname{บรรณานุกรม}
+\include{chapter1.tex}
+\include{chapter2.tex}
+\include{chapter3.tex}
+\include{chapter4.tex}
+\include{chapter5.tex}
+\include{chapter6.tex}
+
+\bibliographystyle{plain}
+\bibliography{references}
+
+\end{document}

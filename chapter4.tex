@@ -1,0 +1,79 @@
+\chapter{ขั้นตอนวิธี}\label{ch:methodology}
+
+\section{ขั้นตอนการดำเนินงานโดยละเอียด}\label{sec:ch4_methodology}
+\paragraph{}
+
+กระบวนการดำเนินงานของโครงการวิจัยนี้เป็นไปตามกรอบการทำงาน KGs-Augmented Testsuite Generator Framework ซึ่งแบ่งออกเป็น 4 ขั้นตอนหลักที่ทำต่อเนื่องกันอย่างเป็นระบบ โดยมีเป้าหมายเพื่อเปลี่ยนรายงานอุบัติเหตุที่เป็นข้อความให้เป็น Scenario ทดสอบที่มีโครงสร้างและมุ่งเน้น Edge-Case:
+
+\subsection{ขั้นที่ 1: การสกัดข้อมูลอุบัติเหตุที่มีโครงสร้าง (Structured Data Extraction)}\label{subsec:ch4_data_extraction}
+
+\begin{enumerate}
+    \item การเลือกแหล่งข้อมูล: กำหนดให้ใช้รายงานอุบัติเหตุเชิงลึกจากฐานข้อมูล CIREN และ GIDAS เป็นข้อมูลนำเข้า
+    \item การออกแบบ Schema: ออกแบบ Schema ที่กำหนดเอนทิตี (เช่น ยานพาหนะ, ผู้ขับขี่, สภาพแวดล้อม) คุณลักษณะ (Attribute) และความสัมพันธ์ (Relationship) ที่จำเป็นต่อการสร้าง Knowledge Graph
+    \item การใช้ Schema-guided LLM: ใช้โมเดลภาษาขนาดใหญ่ (LLM) ที่ถูกนำทางด้วย Schema ที่กำหนดไว้ เพื่ออ่านรายงานอุบัติเหตุ และสกัดข้อมูลสำคัญให้อยู่ในรูปแบบโครงสร้าง (Structured Data) โดยเฉพาะอย่างยิ่งการสกัดความสัมพันธ์เชิงเหตุผล (Causal Relationships)
+\end{enumerate}
+
+\subsection{ขั้นที่ 2: การสร้าง Knowledge Graph (KG Modeling)}\label{subsec:ch4_kg_modeling}
+
+\begin{enumerate}
+    \item การแปลงเป็น Triples: นำข้อมูลที่มีโครงสร้างที่ได้จากขั้นที่ 1 มาแปลงเป็น Triple Sets (Subject-Predicate-Object) เพื่อนำเข้าฐานข้อมูลกราฟ
+    \item การสร้าง KG Backbone: สร้าง Knowledge Graph ซึ่งทำหน้าที่เป็น Semantic Backbone สำหรับข้อมูลอุบัติเหตุ โดยการเชื่อมโยงเอนทิตีและคุณลักษณะต่าง ๆ เข้าด้วยกัน เพื่อให้สามารถจัดเก็บข้อมูลที่ซับซ้อนได้อย่างเป็นระเบียบและรักษาความต่อเนื่องของเหตุการณ์
+    \item การอนุมานข้อมูลที่ขาดหายไป: ใช้กฎการอนุมาน (Inference Rules) พื้นฐานภายใน KG เพื่อเติมเต็มช่องว่างของข้อมูลบางส่วนที่อาจขาดหายไปจากรายงานต้นฉบับ
+\end{enumerate}
+
+\subsection{ขั้นที่ 3: การบูรณาการ ODD และการค้นหา Edge-Case}\label{subsec:ch4_odd_integration}
+
+\begin{enumerate}
+    \item การกำหนดกฎ ODD: แปลงเงื่อนไข Operational Design Domain (ODD) ที่กำหนดโดย JAMA ให้เป็นกฎเชิงตรรกะที่สามารถสืบค้นได้ (Inference Query) ภายใน Knowledge Graph
+    \item การผสาน ODD เข้ากับ KG: สร้างความสัมพันธ์ใหม่ใน KG เพื่อระบุสถานการณ์หรือเหตุการณ์ที่เข้าข่ายเงื่อนไข ODD ที่ท้าทาย (Edge-Case Conditions) หรือละเมิดกฎความปลอดภัย
+    \item การใช้ Inference Engine: เรียกใช้ Inference Engine เพื่อสืบค้น (Query) Knowledge Graph โดยใช้กฎ ODD ที่สร้างขึ้น เพื่อกรองและเลือกเฉพาะ Scenario ที่มุ่งเป้าหมายไปยัง Edge-Case ที่เกี่ยวข้องกับขอบเขตการทำงานของระบบขับขี่อัตโนมัติ
+\end{enumerate}
+
+\subsection{ขั้นที่ 4: การสร้างไฟล์ Scenario มาตรฐาน (Standard Scenario Generation)}\label{subsec:ch4_scenario_generation}
+
+\begin{enumerate}
+    \item การทำ Mapping ข้อมูล: แปลงข้อมูล Scenario ที่ผ่านการกรอง Edge-Case แล้วจากโครงสร้าง KG ให้เข้ากับรูปแบบไฟล์มาตรฐานที่กำหนดโดยอุตสาหกรรม (เช่น ASAM OpenSCENARIO หรือ OpenDRIVE)
+    \item การสร้างไฟล์ผลลัพธ์: ส่งออก Scenario ที่มีโครงสร้างสมบูรณ์และถูกต้องตามเหตุผลในรูปแบบที่พร้อมใช้งานสำหรับการจำลอง (Simulation)
+\end{enumerate}
+
+\section{การวิเคราะห์และออกแบบระบบ}\label{sec:ch4_system_design}
+\paragraph{}
+
+ระบบที่พัฒนาขึ้นมีชื่อว่า KGs-Augmented Testsuite Generator Framework ซึ่งถูกออกแบบมาในลักษณะของระบบประมวลผลข้อมูลหลายขั้นตอน (Multi-Stage Processing System) โดยมีองค์ประกอบหลักดังนี้:
+
+\subsection{สถาปัตยกรรมระบบ}\label{subsec:ch4_architecture}
+
+\begin{enumerate}
+    \item Input Layer: รับข้อมูลนำเข้าจากรายงานอุบัติเหตุที่เป็นข้อความ (Unstructured Text Reports) จากแหล่งข้อมูล CIREN และ GIDAS
+    \item Processing Layer: เป็นหัวใจของระบบ ประกอบด้วย:
+    \begin{itemize}
+        \item Schema-guided LLM Module: ทำหน้าที่เป็นตัวสกัดข้อมูลอัจฉริยะ โดยถูกควบคุมด้วย Ontology Schema เพื่อให้ได้ข้อมูลที่มีโครงสร้าง
+        \item Knowledge Graph Database: ฐานข้อมูลเชิงกราฟที่จัดเก็บข้อมูลอุบัติเหตุในรูปแบบโหนดและความสัมพันธ์ และทำหน้าที่เป็นตัวจัดเก็บกฎ ODD และความสัมพันธ์เชิงอนุมาน
+        \item Inference Engine: กลไกประมวลผลที่ใช้กฎ ODD เพื่อประเมิน Knowledge Graph และระบุ Edge-Case ที่เกี่ยวข้อง ซึ่งเป็นการลดจำนวน Scenario ที่ไม่จำเป็น
+    \end{itemize}
+    \item Output Layer: ส่งออก Scenario ที่ผ่านการประมวลผลแล้วในรูปแบบไฟล์มาตรฐาน (ASAM OpenSCENARIO) เพื่อเชื่อมต่อกับสภาพแวดล้อมจำลอง (Simulation Environment)
+\end{enumerate}
+
+\section{การนำไปใช้งานจริง}\label{sec:ch4_deployment}
+\paragraph{}
+
+การนำกรอบการทำงานนี้ไปใช้งานจริงมุ่งเน้นที่การสร้างชุดทดสอบที่มีคุณภาพสูงสำหรับผู้พัฒนาระบบขับขี่อัตโนมัติ:
+
+\begin{enumerate}
+    \item การติดตั้งระบบ: ระบบถูกติดตั้งในสภาพแวดล้อมการประมวลผลที่มีทรัพยากรสูง เพื่อรองรับการทำงานของ LLM และฐานข้อมูล Knowledge Graph ขนาดใหญ่
+    \item การประยุกต์ใช้: วิศวกรความปลอดภัยสามารถนำเข้าชุดรายงานอุบัติเหตุใหม่ ๆ เข้าสู่ระบบ เพื่อสร้างชุด Scenario ทดสอบที่มุ่งเน้น Edge-Case ได้อย่างรวดเร็ว โดย Scenario ที่ได้จะอยู่ในรูปแบบไฟล์ OpenSCENARIO
+    \item การใช้งานกับ Simulation: ไฟล์ Scenario ที่ถูกส่งออกจะถูกนำเข้าสู่แพลตฟอร์มจำลอง (เช่น Carla, Apollo) เพื่อดำเนินการทดสอบ (Run Test Cases) กับระบบขับขี่อัตโนมัติ (ADS Agent) และประเมินพฤติกรรมของระบบในสถานการณ์วิกฤตที่ตรงตามขอบเขต ODD
+    \item การเผยแพร่: ผลลัพธ์และวิธีการที่ใช้ในการสร้างชุดทดสอบมีเป้าหมายเพื่อเผยแพร่ในงานประชุมวิชาการ เพื่อให้เป็นแนวทางสำหรับชุมชนนักวิจัยและอุตสาหกรรม
+\end{enumerate}
+
+\section{ปัญหาและอุปสรรคระหว่างการพัฒนา}\label{sec:ch4_issues}
+\paragraph{}
+
+ในการพัฒนาและดำเนินการโครงการ มีปัญหาและอุปสรรคหลักที่ต้องเผชิญและแก้ไข ดังนี้:
+
+\begin{enumerate}
+    \item ความไม่น่าเชื่อถือของข้อมูลเริ่มต้น: ปัญหาหลักคือความไม่สมบูรณ์และความกำกวมของข้อมูลในรายงานอุบัติเหตุ ซึ่งทำให้ Schema-guided LLM สกัดข้อมูลที่มีความผิดพลาดหรือข้อมูลขาดหายไป ซึ่งต้องแก้ไขโดยการออกแบบ Schema ให้ละเอียดและมีการตรวจสอบความถูกต้องโดยมนุษย์เพิ่มเติม
+    \item ข้อจำกัดของ LLM ในการอนุมาน: แม้จะใช้ Schema เข้าช่วย แต่ LLM ยังคงสร้างความสัมพันธ์เชิงเหตุผลที่ไม่สอดคล้องกับข้อจำกัดทางฟิสิกส์ (Hallucination) ซึ่งต้องแก้ไขโดยการใช้เทคนิค Multi-Step Prompting เพื่อแยกขั้นตอนการตรวจสอบความสอดคล้องออกจากขั้นตอนการสกัดข้อมูล
+    \item ประสิทธิภาพการประมวลผล Knowledge Graph ขนาดใหญ่: เมื่อจำนวน Scenario ที่ถูกสกัดและนำเข้า KG เพิ่มขึ้น ประสิทธิภาพของ Inference Engine ในการสืบค้น Edge-Case ตามกฎ ODD จะลดลงอย่างมาก แนวทางแก้ไขคือการใช้เทคนิคการทำ Indexing และ Partitioning ในฐานข้อมูลกราฟเพื่อเพิ่มความเร็วในการประมวลผล
+    \item ความซับซ้อนในการทำ Mapping ผลลัพธ์: การแปลงข้อมูลจากโครงสร้าง Knowledge Graph ที่ซับซ้อนไปยังรูปแบบมาตรฐาน ASAM OpenSCENARIO ต้องอาศัยการทำ Mapping ที่แม่นยำและถูกตรวจสอบ เพื่อป้องกันข้อผิดพลาดในการแปลความหมายของ Scenario ที่นำไปใช้ในการจำลองจริง
+\end{enumerate}

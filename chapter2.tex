@@ -1,0 +1,91 @@
+\chapter{เอกสารและงานวิจัยที่เกี่ยวข้อง}
+
+\paragraph{}
+บทนี้เป็นการทบทวนวรรณกรรม เอกสาร และงานวิจัยที่เกี่ยวข้องกับแนวคิดหลักและวิธีการที่ใช้ในการวิจัยนี้ โดยมีจุดมุ่งหมายเพื่อสร้างฐานความรู้ที่แข็งแกร่งและระบุช่องว่างทางการวิจัยที่โครงการนี้มุ่งเน้นแก้ไข เนื้อหาจะแบ่งออกเป็นแนวคิดพื้นฐานเกี่ยวกับระบบขับขี่อัตโนมัติ การสร้าง Scenario, โครงสร้างข้อมูล Knowledge Graph, และการใช้ LLM ในการประมวลผลภาษาธรรมชาติ
+
+\section{แนวคิดพื้นฐานและทฤษฎีที่เกี่ยวข้อง}
+
+\subsection{Operational Design Domain (ODD)}
+\paragraph{}
+ODD คือชุดของเงื่อนไขการปฏิบัติงานที่กำหนดไว้ล่วงหน้า (เช่น สภาพภูมิอากาศ, สภาพถนน, ความเร็วสูงสุด) ซึ่งระบบขับขี่อัตโนมัติ (ADS) ได้รับการออกแบบมาให้ทำงานได้อย่างปลอดภัย ODD เป็นแนวคิดที่สำคัญอย่างยิ่งในการประเมินความปลอดภัย เนื่องจากช่วยกำหนดขอบเขตการทดสอบให้ชัดเจน งานวิจัยนี้ได้ใช้ ODD ที่กำหนดโดย \textbf{JAMA (Japan Automobile Manufacturers Association)} เป็นข้อจำกัดหลักในการกรองและสร้าง Scenario เพื่อให้ชุดทดสอบมีความสอดคล้องกับขีดความสามารถของระบบที่กำลังประเมิน
+
+\subsection{Knowledge Graph (KG)}
+\paragraph{}
+Knowledge Graph เป็นรูปแบบการนำเสนอข้อมูลเชิงความหมาย (Semantic Data Structure) ที่ใช้โหนด (Nodes) และขอบ (Edges/Relationships) เพื่อแสดงถึงเอนทิตี (Entities) และความสัมพันธ์ระหว่างเอนทิตีเหล่านั้น บทบาทของ KG ในงานวิจัยนี้คือการทำหน้าที่เป็น \textbf{Semantic Backbone} สำหรับข้อมูลอุบัติเหตุ ทำให้สามารถจัดเก็บข้อมูลที่สกัดจากรายงานอุบัติเหตุในรูปแบบที่มีโครงสร้างและอนุมาน (Inference) ข้อมูลที่ขาดหายไปได้ นอกจากนี้ยังช่วยรักษาความต่อเนื่องเชิงเหตุผล (Causal Continuity) ของเหตุการณ์ที่เกิดขึ้นในอุบัติเหตุ
+
+\subsection{Schema-guided Large Language Model (LLM)}\paragraph{}
+
+LLM เป็นเครื่องมือที่มีประสิทธิภาพในการประมวลผลภาษาธรรมชาติ (NLP) งานวิจัยนี้ใช้เทคนิค \textbf{Schema-guided LLM} เพื่อควบคุมและกำหนดทิศทางการสกัดข้อมูลจากรายงานอุบัติเหตุที่เป็นข้อความ (Unstructured Text) ให้เป็นข้อมูลที่มีโครงสร้าง (Structured Data) ตาม Schema ที่ออกแบบไว้ล่วงหน้า การควบคุมด้วย Schema นี้ช่วยเพิ่มความน่าเชื่อถือและความสม่ำเสมอของข้อมูลที่สกัดได้ ก่อนนำไปสร้างเป็น Knowledge Graph
+
+\subsection{Edge-Case Discovery Efficiency}\paragraph{}
+
+Edge-Case หมายถึงสถานการณ์ที่อยู่ขอบเขตการทำงานของระบบ ซึ่งมีโอกาสที่จะทำให้ระบบ ADS ล้มเหลวหรือทำงานผิดพลาด แนวคิดนี้เน้นไปที่การเพิ่ม \textbf{ประสิทธิภาพการค้นพบ (Discoverability Efficiency)} ซึ่งหมายถึงการลดจำนวน Scenario ที่ต้องสร้างขึ้นทั้งหมดจนกว่าจะพบ Edge-Case ใหม่ที่ท้าทายระบบจริง
+
+\section{งานวิจัยที่เกี่ยวข้อง}
+
+\subsection{การสร้าง Scenario จากรายงานอุบัติเหตุ}\paragraph{}
+
+งานวิจัยก่อนหน้าได้สำรวจการใช้โมเดลภาษาขนาดใหญ่เพื่อแปลงรายงานอุบัติเหตุเป็นสถานการณ์จำลองสำหรับการทดสอบ ADS \cite{khot2024prompting} อย่างไรก็ตาม วิธีการเหล่านี้มักประสบปัญหาความไม่น่าเชื่อถือของ Scenario ที่สร้างขึ้น และขาดกลไกที่ชัดเจนในการมุ่งเน้นการสร้างเฉพาะ Edge-Case ที่เกี่ยวข้องกับขอบเขตของ ADS
+
+\subsection{การวิเคราะห์อุบัติเหตุด้วย Knowledge Graph}\paragraph{}
+
+มีการประยุกต์ใช้ Knowledge Graph ในการวิเคราะห์อุบัติเหตุจราจร เพื่อแสดงความสัมพันธ์เชิงสาเหตุของปัจจัยต่าง ๆ ที่นำไปสู่อุบัติเหตุ \cite{liyan2022analysis} ซึ่งการใช้ KG นี้ช่วยในการอนุมานข้อมูลที่ขาดหายไปและเพิ่มความเข้าใจในโครงสร้างของอุบัติเหตุ อย่างไรก็ตาม งานเหล่านี้มักมุ่งเน้นที่การวิเคราะห์มากกว่าการประยุกต์ใช้เพื่อสร้างชุดทดสอบที่มีเป้าหมายเฉพาะ
+
+\subsection{การประยุกต์ใช้ ODD ในการทดสอบ}\paragraph{}
+
+งานวิจัยบางส่วนได้เสนอแนวคิดในการใช้ออนโทโลยี (Ontology) หรือ ODD เพื่อจัดหมวดหมู่และกำหนดขอบเขตของการสร้าง Scenario สำหรับยานยนต์อัตโนมัติ \cite{bagschik2018ontology} แนวทางนี้ช่วยให้การทดสอบมีเป้าหมายที่ชัดเจน อย่างไรก็ตาม ยังไม่มีการผสานรวม ODD เข้ากับโครงสร้าง Knowledge Graph และ LLM อย่างเป็นระบบ เพื่อแก้ไขปัญหาประสิทธิภาพในการค้นพบ Edge-Case
+
+\subsection{ความแตกต่างและช่องว่างทางการวิจัย}\paragraph{}
+
+งานวิจัยนี้เติมเต็มช่องว่างที่งานวิจัยก่อนหน้ายังขาดอยู่ โดยการ \textbf{รวมเอาความน่าเชื่อถือของ Knowledge Graph} เข้ากับ \textbf{ความสามารถในการสกัดข้อมูลของ Schema-guided LLM} และ \textbf{การกำหนดขอบเขตที่ชัดเจนของ ODD} เข้าไว้ในกรอบการทำงานเดียว ทำให้เป็นแนวทางแรก ๆ ที่มุ่งเน้นการแก้ไขปัญหา \textbf{Edge-Case Discovery Efficiency} โดยเฉพาะ
+
+\section{เทคโนโลยีและเครื่องมือที่ใช้}
+
+\subsection{เครื่องมือประมวลผลภาษาธรรมชาติและข้อมูล}
+\begin{itemize}
+ \item \textbf{Large Language Model (LLM):} ใช้ในการทำ Schema-guided Extraction เพื่อสกัดข้อมูลอุบัติเหตุจากรายงานที่เป็นข้อความ (Unstructured Reports)
+ \item \textbf{Knowledge Graph Database:} แพลตฟอร์มฐานข้อมูลเชิงกราฟ (เช่น Neo4j, RDF Triple Store) ใช้ในการจัดเก็บ KG และรองรับการทำ Inference Engine เพื่อตรวจสอบข้อจำกัดของ ODD
+\end{itemize}
+
+\subsection{แหล่งข้อมูลอุบัติเหตุ (Accident Data Sources)}
+งานวิจัยนี้อาศัยข้อมูลจากฐานข้อมูลอุบัติเหตุจริงที่เปิดเผยต่อสาธารณะ เพื่อเป็นข้อมูลนำเข้าในการสกัด Scenario:
+\begin{table}[h!]
+ \centering
+ \caption{ตารางแสดงแหล่งข้อมูลอุบัติเหตุที่ใช้ในการวิจัย}
+ \label{tab:data-sources}
+ \begin{tabular}{|c|c|c|}
+ \hline
+ แหล่งข้อมูล & ชื่อเต็ม & ลักษณะข้อมูล \\
+ \hline
+ CIREN \cite{nhtsa_ciren} & Crash Injury Research and Engineering Network & รายงานอุบัติเหตุฉบับสมบูรณ์จากสหรัฐอเมริกา \\
+\hline
+GIDAS \cite{gidas_study} & German In-Depth Accident Study & ข้อมูลเชิงลึกของอุบัติเหตุในเยอรมนี \\
+ \hline
+ \end{tabular}
+\end{table}
+
+จากตาราง \ref{tab:data-sources} ข้อมูลที่ได้จากทั้งสองแหล่งมีความละเอียดเพียงพอต่อการสกัดเอนทิตีและความสัมพันธ์เพื่อสร้างเป็น Knowledge Graph ได้อย่างสมบูรณ์
+
+\subsection{มาตรฐานและสภาพแวดล้อมจำลอง}\paragraph{}
+
+ผลลัพธ์ของงานวิจัยถูกออกแบบให้สามารถส่งออก Scenario ในรูปแบบที่เข้ากันได้กับมาตรฐานอุตสาหกรรม (เช่น ASAM OpenSCENARIO) เพื่อนำไปใช้งานในสภาพแวดล้อมจำลอง (Simulation Environment) สำหรับการประเมิน ADS ต่อไป
+
+% ส่วนบรรณานุกรมสำหรับบทนี้
+\begin{thebibliography}{99}
+
+\bibitem{liyan2022analysis}
+Liyan, Zhang, Min, Tang, Jiazhen, Ma, Jian, Duan, Xiaoke, Sun, Juan, Hu, Xiaofei, Xu, Suchuan, Analysis of Traffic Accident Based on Knowledge Graph, Journal of Advanced Transportation, 2022, 3915467, 16 pages, 2022.
+
+\bibitem{bagschik2018ontology}
+Bagschik G, Menzel T, Maurer M. Ontology based Scene Creation for the Development of Automated Vehicles. In: 2018 21st International Conference on Intelligent Transportation Systems (ITSC); 2018 Nov 4-7; Maui, HI, USA. New York: IEEE; 2018. p. 756-761.
+
+\bibitem{khot2024prompting}
+Khot T, Ugare SG, Goenka M, Singh S, Trivedi HR, Sabharwal A, et al. Prompting Large Language Models with Divide-and-Conquer Program for Discerning Problem Solving [Internet]. arXiv; 2024 [cited 2025 Aug 31].
+
+\bibitem{nhtsa_ciren}
+National Highway Traffic Safety Administration (NHTSA). Crash Injury Research and Engineering Network (CIREN) Database [Internet]. Washington D.C.: U.S. Department of Transportation; [cited 2025 Aug 28].
+
+\bibitem{gidas_study}
+German In-Depth Accident Study (GIDAS). German In-Depth Accident Study (GIDAS) [Internet]. [cited 2025 Aug 28].
+
+\end{thebibliography}
