@@ -1,139 +1,172 @@
 \xpg@aux {}{thai}
 \contentsline {chapter}{กิตติกรรมประกาศ}{ ก}{chapter*.1}%
 \contentsline {paragraph}{}{ ก}{paragraph*.2}%
-\contentsline {chapter}{บทคัดย่อ}{ ข}{chapter*.3}%
-\contentsline {paragraph}{}{ ข}{paragraph*.4}%
-\contentsline {chapter}{Abstract}{ ค}{chapter*.5}%
-\contentsline {paragraph}{}{ ค}{paragraph*.6}%
-\contentsline {chapter}{สารบัญ}{ ง}{section*.7}%
-\contentsline {chapter}{สารบัญรูป}{ ช}{section*.8}%
-\contentsline {chapter}{สารบัญตาราง}{ ซ}{section*.9}%
+\contentsline {paragraph}{}{ ก}{paragraph*.3}%
+\contentsline {paragraph}{}{ ก}{paragraph*.4}%
+\contentsline {paragraph}{}{ ก}{paragraph*.5}%
+\contentsline {paragraph}{}{ ก}{paragraph*.6}%
+\contentsline {chapter}{บทคัดย่อ}{ ข}{chapter*.7}%
+\contentsline {paragraph}{}{ ข}{paragraph*.8}%
+\contentsline {chapter}{Abstract}{ ค}{chapter*.9}%
+\contentsline {paragraph}{}{ ค}{paragraph*.10}%
+\contentsline {chapter}{สารบัญ}{ ง}{section*.11}%
+\contentsline {chapter}{สารบัญรูป}{ ช}{section*.12}%
+\contentsline {chapter}{สารบัญตาราง}{ ซ}{section*.13}%
 \contentsline {chapter}{\numberline {1}บทนำ}{1}{chapter.1}%
-\contentsline {paragraph}{}{1}{paragraph*.10}%
+\contentsline {paragraph}{}{1}{paragraph*.14}%
 \contentsline {section}{\numberline {1.1}ข้อมูลสถานประกอบการ}{1}{section.1.1}%
 \contentsline {subsection}{\numberline {1.1.1}ชื่อองค์กร}{1}{subsection.1.1.1}%
-\contentsline {paragraph}{}{1}{paragraph*.11}%
+\contentsline {paragraph}{}{1}{paragraph*.15}%
 \contentsline {subsection}{\numberline {1.1.2}ระยะเวลาการปฏิบัติงาน}{1}{subsection.1.1.2}%
-\contentsline {paragraph}{}{1}{paragraph*.12}%
+\contentsline {paragraph}{}{1}{paragraph*.16}%
 \contentsline {subsection}{\numberline {1.1.3}ลักษณะขององค์กร}{1}{subsection.1.1.3}%
-\contentsline {paragraph}{}{1}{paragraph*.13}%
+\contentsline {paragraph}{}{1}{paragraph*.17}%
 \contentsline {section}{\numberline {1.2}ตำแหน่งและลักษณะงานที่ได้รับมอบหมาย}{2}{section.1.2}%
 \contentsline {subsection}{\numberline {1.2.1}ตำแหน่งงานที่ปฏิบัติ}{2}{subsection.1.2.1}%
-\contentsline {paragraph}{}{2}{paragraph*.14}%
+\contentsline {paragraph}{}{2}{paragraph*.18}%
 \contentsline {subsection}{\numberline {1.2.2}งานที่ได้รับมอบหมาย}{2}{subsection.1.2.2}%
-\contentsline {paragraph}{}{2}{paragraph*.15}%
+\contentsline {paragraph}{}{2}{paragraph*.19}%
 \contentsline {section}{\numberline {1.3}หลักการและเหตุผล}{2}{section.1.3}%
-\contentsline {paragraph}{}{2}{paragraph*.16}%
+\contentsline {paragraph}{}{2}{paragraph*.20}%
 \contentsline {section}{\numberline {1.4}วัตถุประสงค์}{2}{section.1.4}%
 \contentsline {section}{\numberline {1.5}ประโยชน์ที่คาดว่าจะได้รับ}{3}{section.1.5}%
 \contentsline {section}{\numberline {1.6}ขอบเขต}{3}{section.1.6}%
 \contentsline {subsection}{\numberline {1.6.1}ขอบเขตของข้อมูล}{3}{subsection.1.6.1}%
-\contentsline {paragraph}{}{3}{paragraph*.17}%
+\contentsline {paragraph}{}{3}{paragraph*.21}%
 \contentsline {subsection}{\numberline {1.6.2}ขอบเขตของงาน}{4}{subsection.1.6.2}%
-\contentsline {paragraph}{}{4}{paragraph*.18}%
+\contentsline {paragraph}{}{4}{paragraph*.22}%
 \contentsline {section}{\numberline {1.7}เครื่องมือและเทคโนโลยีที่ใช้}{4}{section.1.7}%
 \contentsline {subsection}{\numberline {1.7.1}ฮาร์ดแวร์ที่ใช้ในการปฏิบัติงาน}{4}{subsection.1.7.1}%
 \contentsline {subsection}{\numberline {1.7.2}ซอฟต์แวร์ที่ใช้ในการปฏิบัติงาน}{4}{subsection.1.7.2}%
 \contentsline {subsection}{\numberline {1.7.3}ภาษาโปรแกรมที่ใช้ในการพัฒนา}{5}{subsection.1.7.3}%
 \contentsline {section}{\numberline {1.8}แผนปฏิบัติงานสหกิจศึกษา}{5}{section.1.8}%
 \contentsline {chapter}{\numberline {2}เอกสารและงานวิจัยที่เกี่ยวข้อง}{6}{chapter.2}%
-\contentsline {paragraph}{}{6}{paragraph*.19}%
+\contentsline {paragraph}{}{6}{paragraph*.23}%
 \contentsline {section}{\numberline {2.1}แนวคิดพื้นฐานและทฤษฎีที่เกี่ยวข้อง}{6}{section.2.1}%
 \contentsline {subsection}{\numberline {2.1.1}Ego Vehicle}{6}{subsection.2.1.1}%
-\contentsline {paragraph}{}{6}{paragraph*.20}%
+\contentsline {paragraph}{}{6}{paragraph*.24}%
 \contentsline {subsection}{\numberline {2.1.2}Operational Design Domain}{6}{subsection.2.1.2}%
-\contentsline {paragraph}{}{6}{paragraph*.21}%
+\contentsline {paragraph}{}{6}{paragraph*.25}%
 \contentsline {subsection}{\numberline {2.1.3}Knowledge Graph}{6}{subsection.2.1.3}%
-\contentsline {paragraph}{}{6}{paragraph*.22}%
+\contentsline {paragraph}{}{6}{paragraph*.26}%
 \contentsline {subsection}{\numberline {2.1.4}การประมวลผลภาษาธรรมชาติ}{7}{subsection.2.1.4}%
-\contentsline {paragraph}{}{7}{paragraph*.23}%
+\contentsline {paragraph}{}{7}{paragraph*.27}%
 \contentsline {subsection}{\numberline {2.1.5}Large Language Model}{7}{subsection.2.1.5}%
-\contentsline {paragraph}{}{7}{paragraph*.24}%
+\contentsline {paragraph}{}{7}{paragraph*.28}%
 \contentsline {subsection}{\numberline {2.1.6}Schema-guided Large Language Model}{7}{subsection.2.1.6}%
-\contentsline {paragraph}{}{7}{paragraph*.25}%
-\contentsline {paragraph}{}{7}{paragraph*.26}%
+\contentsline {paragraph}{}{7}{paragraph*.29}%
+\contentsline {paragraph}{}{7}{paragraph*.30}%
 \contentsline {subsection}{\numberline {2.1.7}กรณีขอบเขต (Edge Case)}{8}{subsection.2.1.7}%
-\contentsline {paragraph}{}{8}{paragraph*.27}%
-\contentsline {paragraph}{}{8}{paragraph*.28}%
+\contentsline {paragraph}{}{8}{paragraph*.31}%
+\contentsline {paragraph}{}{8}{paragraph*.32}%
 \contentsline {subsection}{\numberline {2.1.8}ประสิทธิภาพการค้นพบกรณีขอบเขต (Edge-Case Discovery Efficiency)}{8}{subsection.2.1.8}%
-\contentsline {paragraph}{}{8}{paragraph*.29}%
-\contentsline {paragraph}{}{9}{paragraph*.30}%
+\contentsline {paragraph}{}{8}{paragraph*.33}%
+\contentsline {paragraph}{}{9}{paragraph*.34}%
 \contentsline {section}{\numberline {2.2}งานวิจัยที่เกี่ยวข้อง}{9}{section.2.2}%
 \contentsline {subsection}{\numberline {2.2.1}การสร้างสถานการณ์จำลองจากรายงานอุบัติเหตุ}{9}{subsection.2.2.1}%
-\contentsline {paragraph}{}{9}{paragraph*.31}%
+\contentsline {paragraph}{}{9}{paragraph*.35}%
 \contentsline {subsection}{\numberline {2.2.2}การวิเคราะห์อุบัติเหตุด้วย Knowledge Graph}{9}{subsection.2.2.2}%
-\contentsline {paragraph}{}{9}{paragraph*.32}%
-\contentsline {paragraph}{}{10}{paragraph*.33}%
+\contentsline {paragraph}{}{9}{paragraph*.36}%
+\contentsline {paragraph}{}{10}{paragraph*.37}%
 \contentsline {subsection}{\numberline {2.2.3}การประยุกต์ใช้ ODD ในการทดสอบ}{10}{subsection.2.2.3}%
-\contentsline {paragraph}{}{10}{paragraph*.34}%
-\contentsline {paragraph}{}{10}{paragraph*.35}%
-\contentsline {paragraph}{}{11}{paragraph*.36}%
+\contentsline {paragraph}{}{10}{paragraph*.38}%
+\contentsline {paragraph}{}{10}{paragraph*.39}%
+\contentsline {paragraph}{}{11}{paragraph*.40}%
 \contentsline {subsection}{\numberline {2.2.4}ความแตกต่างและช่องว่างทางการวิจัย}{11}{subsection.2.2.4}%
-\contentsline {paragraph}{}{11}{paragraph*.37}%
-\contentsline {paragraph}{}{11}{paragraph*.38}%
+\contentsline {paragraph}{}{11}{paragraph*.41}%
+\contentsline {paragraph}{}{11}{paragraph*.42}%
 \contentsline {section}{\numberline {2.3}เทคโนโลยีและเครื่องมือที่ใช้}{13}{section.2.3}%
 \contentsline {subsection}{\numberline {2.3.1}เครื่องมือประมวลผลภาษาธรรมชาติและข้อมูล}{13}{subsection.2.3.1}%
 \contentsline {subsection}{\numberline {2.3.2}แหล่งข้อมูลอุบัติเหตุ}{13}{subsection.2.3.2}%
-\contentsline {paragraph}{}{13}{paragraph*.39}%
-\contentsline {subsubsection}{CIREN (Crash Injury Research and Engineering Network)}{13}{subsubsection*.40}%
-\contentsline {paragraph}{}{13}{paragraph*.41}%
-\contentsline {subsubsection}{GIDAS (German In-Depth Accident Study)}{13}{subsubsection*.42}%
 \contentsline {paragraph}{}{13}{paragraph*.43}%
-\contentsline {paragraph}{}{14}{paragraph*.44}%
+\contentsline {subsubsection}{CIREN (Crash Injury Research and Engineering Network)}{13}{subsubsection*.44}%
+\contentsline {paragraph}{}{13}{paragraph*.45}%
+\contentsline {subsubsection}{GIDAS (German In-Depth Accident Study)}{13}{subsubsection*.46}%
+\contentsline {paragraph}{}{13}{paragraph*.47}%
+\contentsline {paragraph}{}{14}{paragraph*.48}%
 \contentsline {subsection}{\numberline {2.3.3}มาตรฐานและสภาพแวดล้อมจำลอง}{14}{subsection.2.3.3}%
-\contentsline {paragraph}{}{14}{paragraph*.45}%
-\contentsline {paragraph}{}{14}{paragraph*.46}%
-\contentsline {paragraph}{}{16}{paragraph*.47}%
+\contentsline {paragraph}{}{14}{paragraph*.49}%
+\contentsline {paragraph}{}{14}{paragraph*.50}%
+\contentsline {paragraph}{}{16}{paragraph*.51}%
 \contentsline {chapter}{\numberline {3}ปัญหาและสมมติฐาน}{17}{chapter.3}%
 \contentsline {section}{\numberline {3.1}ปัญหาที่พบในการปฏิบัติงาน}{17}{section.3.1}%
-\contentsline {paragraph}{}{17}{paragraph*.48}%
+\contentsline {paragraph}{}{17}{paragraph*.52}%
 \contentsline {subsection}{\numberline {3.1.1}ปัญหาด้านการสกัดข้อมูลและการสร้าง Knowledge Graph}{17}{subsection.3.1.1}%
-\contentsline {paragraph}{}{17}{paragraph*.49}%
+\contentsline {paragraph}{}{17}{paragraph*.53}%
 \contentsline {subsection}{\numberline {3.1.2}ปัญหาด้านการบูรณาการ ODD และประสิทธิภาพ}{17}{subsection.3.1.2}%
 \contentsline {subsection}{\numberline {3.1.3}ปัญหาด้านผลลัพธ์และการนำไปใช้}{18}{subsection.3.1.3}%
-\contentsline {paragraph}{}{18}{paragraph*.50}%
+\contentsline {paragraph}{}{18}{paragraph*.54}%
 \contentsline {section}{\numberline {3.2}การวิเคราะห์ปัญหา}{18}{section.3.2}%
-\contentsline {paragraph}{}{18}{paragraph*.51}%
+\contentsline {paragraph}{}{18}{paragraph*.55}%
 \contentsline {subsection}{\numberline {3.2.1}การวิเคราะห์ปัญหาด้านข้อมูลและความน่าเชื่อถือ}{18}{subsection.3.2.1}%
-\contentsline {paragraph}{}{18}{paragraph*.52}%
+\contentsline {paragraph}{}{18}{paragraph*.56}%
 \contentsline {subsection}{\numberline {3.2.2}การวิเคราะห์ปัญหาด้านการจัดการ Knowledge Graph และ ODD}{19}{subsection.3.2.2}%
-\contentsline {paragraph}{}{19}{paragraph*.53}%
+\contentsline {paragraph}{}{19}{paragraph*.57}%
 \contentsline {section}{\numberline {3.3}สมมติฐานหรือแนวทางในการแก้ไข}{19}{section.3.3}%
-\contentsline {paragraph}{}{19}{paragraph*.54}%
+\contentsline {paragraph}{}{19}{paragraph*.58}%
 \contentsline {subsection}{\numberline {3.3.1}การเสริมสร้างความน่าเชื่อถือของการสกัดข้อมูล}{19}{subsection.3.3.1}%
-\contentsline {paragraph}{}{19}{paragraph*.55}%
+\contentsline {paragraph}{}{19}{paragraph*.59}%
 \contentsline {subsection}{\numberline {3.3.2}การเพิ่มประสิทธิภาพการค้นพบ Edge-Case}{20}{subsection.3.3.2}%
-\contentsline {paragraph}{}{20}{paragraph*.56}%
+\contentsline {paragraph}{}{20}{paragraph*.60}%
 \contentsline {subsection}{\numberline {3.3.3}การปรับปรุงการส่งออก Scenario}{20}{subsection.3.3.3}%
-\contentsline {paragraph}{}{20}{paragraph*.57}%
+\contentsline {paragraph}{}{20}{paragraph*.61}%
 \contentsline {section}{\numberline {3.4}ข้อจำกัดของการศึกษา}{21}{section.3.4}%
-\contentsline {paragraph}{}{21}{paragraph*.58}%
+\contentsline {paragraph}{}{21}{paragraph*.62}%
 \contentsline {subsection}{\numberline {3.4.1}ข้อจำกัดด้านข้อมูลและเทคโนโลยี}{21}{subsection.3.4.1}%
-\contentsline {paragraph}{}{21}{paragraph*.59}%
+\contentsline {paragraph}{}{21}{paragraph*.63}%
 \contentsline {subsection}{\numberline {3.4.2}ข้อจำกัดด้านขอบเขตการดำเนินงาน}{21}{subsection.3.4.2}%
-\contentsline {paragraph}{}{21}{paragraph*.60}%
+\contentsline {paragraph}{}{21}{paragraph*.64}%
 \contentsline {chapter}{\numberline {4}ขั้นตอนวิธี}{22}{chapter.4}%
-\contentsline {section}{\numberline {4.1}ขั้นตอนการดำเนินงานโดยละเอียด}{22}{section.4.1}%
-\contentsline {paragraph}{}{22}{paragraph*.61}%
-\contentsline {subsection}{\numberline {4.1.1}ขั้นที่ 1: การสกัดข้อมูลอุบัติเหตุที่มีโครงสร้าง (Structured Data Extraction)}{22}{subsection.4.1.1}%
-\contentsline {subsection}{\numberline {4.1.2}ขั้นที่ 2: การสร้าง Knowledge Graph (KG Modeling)}{22}{subsection.4.1.2}%
-\contentsline {subsection}{\numberline {4.1.3}ขั้นที่ 3: การบูรณาการ ODD และการค้นหา Edge-Case}{23}{subsection.4.1.3}%
-\contentsline {subsection}{\numberline {4.1.4}ขั้นที่ 4: การสร้างไฟล์ Scenario มาตรฐาน (Standard Scenario Generation)}{23}{subsection.4.1.4}%
-\contentsline {section}{\numberline {4.2}การวิเคราะห์และออกแบบระบบ}{23}{section.4.2}%
-\contentsline {paragraph}{}{23}{paragraph*.62}%
-\contentsline {subsection}{\numberline {4.2.1}สถาปัตยกรรมระบบ}{23}{subsection.4.2.1}%
-\contentsline {section}{\numberline {4.3}การนำไปใช้งานจริง}{24}{section.4.3}%
-\contentsline {paragraph}{}{24}{paragraph*.63}%
-\contentsline {section}{\numberline {4.4}ปัญหาและอุปสรรคระหว่างการพัฒนา}{24}{section.4.4}%
-\contentsline {paragraph}{}{24}{paragraph*.64}%
-\contentsline {chapter}{\numberline {5}ผลการศึกษา}{26}{chapter.5}%
-\contentsline {section}{\numberline {5.1}ผลการดำเนินงานตามวัตถุประสงค์}{26}{section.5.1}%
-\contentsline {section}{\numberline {5.2}ตัวอย่างผลลัพธ์}{26}{section.5.2}%
-\contentsline {section}{\numberline {5.3}การเปรียบเทียบก่อนและหลังการพัฒนา}{26}{section.5.3}%
-\contentsline {section}{\numberline {5.4}การประเมินผล}{26}{section.5.4}%
-\contentsline {chapter}{\numberline {6}สรุปผลการศึกษาและวิจารณ์ผลการศึกษา}{27}{chapter.6}%
-\contentsline {section}{\numberline {6.1}สรุปผลการดำเนินงาน}{27}{section.6.1}%
-\contentsline {section}{\numberline {6.2}ข้อสังเกตและข้อวิจารณ์}{27}{section.6.2}%
-\contentsline {section}{\numberline {6.3}ข้อเสนอแนะในการพัฒนาต่อไป}{27}{section.6.3}%
-\contentsline {section}{\numberline {6.4}ประสบการณ์จากการเข้าร่วมโครงการสหกิจศึกษา}{27}{section.6.4}%
-\contentsline {chapter}{บรรณานุกรม}{28}{chapter*.65}%
+\contentsline {section}{\numberline {4.1}ภาพรวมของขั้นตอนวิธี}{22}{section.4.1}%
+\contentsline {paragraph}{}{22}{paragraph*.65}%
+\contentsline {section}{\numberline {4.2}ขั้นตอนการดำเนินงานโดยละเอียด}{23}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}ขั้นที่ 1: การสกัดข้อมูลอุบัติเหตุที่มีโครงสร้าง (Structured Data Extraction)}{23}{subsection.4.2.1}%
+\contentsline {paragraph}{}{23}{paragraph*.66}%
+\contentsline {paragraph}{}{24}{paragraph*.67}%
+\contentsline {subsection}{\numberline {4.2.2}ขั้นที่ 2: การสร้าง Knowledge Graph (KG Modeling)}{24}{subsection.4.2.2}%
+\contentsline {paragraph}{}{24}{paragraph*.68}%
+\contentsline {paragraph}{}{24}{paragraph*.69}%
+\contentsline {subsection}{\numberline {4.2.3}ขั้นที่ 3: การบูรณาการ ODD และการค้นหา Edge-Case ด้วย Query Rotation}{24}{subsection.4.2.3}%
+\contentsline {paragraph}{}{24}{paragraph*.70}%
+\contentsline {paragraph}{}{26}{paragraph*.71}%
+\contentsline {subsection}{\numberline {4.2.4}ขั้นที่ 4: การสร้างชุดพารามิเตอร์สำหรับ Scenario Template}{26}{subsection.4.2.4}%
+\contentsline {paragraph}{}{26}{paragraph*.72}%
+\contentsline {paragraph}{}{26}{paragraph*.73}%
+\contentsline {section}{\numberline {4.3}ขั้นตอนการประเมินผล: Scenario Completeness Score}{27}{section.4.3}%
+\contentsline {paragraph}{}{27}{paragraph*.74}%
+\contentsline {paragraph}{}{27}{paragraph*.75}%
+\contentsline {paragraph}{}{27}{paragraph*.76}%
+\contentsline {paragraph}{}{27}{paragraph*.77}%
+\contentsline {paragraph}{}{27}{paragraph*.78}%
+\contentsline {section}{\numberline {4.4}ข้อจำกัดของการศึกษา}{28}{section.4.4}%
+\contentsline {paragraph}{}{28}{paragraph*.79}%
+\contentsline {subsection}{\numberline {4.4.1}ข้อจำกัดด้านข้อมูลและเทคโนโลยี}{28}{subsection.4.4.1}%
+\contentsline {subsection}{\numberline {4.4.2}ข้อจำกัดด้านขอบเขตการดำเนินงาน}{28}{subsection.4.4.2}%
+\contentsline {chapter}{\numberline {5}ผลการศึกษา}{30}{chapter.5}%
+\contentsline {paragraph}{}{30}{paragraph*.80}%
+\contentsline {section}{\numberline {5.1}ผลการดำเนินงานตามวัตถุประสงค์}{30}{section.5.1}%
+\contentsline {paragraph}{}{30}{paragraph*.81}%
+\contentsline {section}{\numberline {5.2}ตัวอย่างผลลัพธ์}{31}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}ผลการจำแนกประเภทอุบัติเหตุด้วย ODD Modular}{31}{subsection.5.2.1}%
+\contentsline {paragraph}{}{31}{paragraph*.82}%
+\contentsline {subsection}{\numberline {5.2.2}กรณีศึกษา C00013: Intersection Signalized Conflict}{31}{subsection.5.2.2}%
+\contentsline {paragraph}{}{31}{paragraph*.83}%
+\contentsline {section}{\numberline {5.3}การเปรียบเทียบก่อนและหลังการพัฒนา}{33}{section.5.3}%
+\contentsline {paragraph}{}{33}{paragraph*.84}%
+\contentsline {section}{\numberline {5.4}การประเมินผล}{33}{section.5.4}%
+\contentsline {paragraph}{}{33}{paragraph*.85}%
+\contentsline {paragraph}{}{33}{paragraph*.86}%
+\contentsline {paragraph}{}{33}{paragraph*.87}%
+\contentsline {chapter}{\numberline {6}สรุปผลการศึกษาและวิจารณ์ผลการศึกษา}{34}{chapter.6}%
+\contentsline {paragraph}{}{34}{paragraph*.88}%
+\contentsline {section}{\numberline {6.1}สรุปผลการดำเนินงาน}{34}{section.6.1}%
+\contentsline {paragraph}{}{34}{paragraph*.89}%
+\contentsline {section}{\numberline {6.2}ข้อสังเกตและข้อวิจารณ์}{34}{section.6.2}%
+\contentsline {paragraph}{}{34}{paragraph*.90}%
+\contentsline {paragraph}{}{34}{paragraph*.91}%
+\contentsline {paragraph}{}{35}{paragraph*.92}%
+\contentsline {section}{\numberline {6.3}ข้อเสนอแนะในการพัฒนาต่อไป}{35}{section.6.3}%
+\contentsline {paragraph}{}{35}{paragraph*.93}%
+\contentsline {section}{\numberline {6.4}ประสบการณ์จากการเข้าร่วมโครงการสหกิจศึกษา}{35}{section.6.4}%
+\contentsline {paragraph}{}{35}{paragraph*.94}%
+\contentsline {chapter}{บรรณานุกรม}{37}{chapter*.95}%

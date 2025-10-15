@@ -9,5 +9,10 @@
 \contentsline {figure}{\numberline {2.7}{\ignorespaces \xpg@aux {}{thai}ตัวอย่างกรณีศึกษาและคำอธิบายเหตุการณ์จากฐานข้อมูล GIDAS}}{14}{figure.2.7}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces \xpg@aux {}{thai}ตัวอย่างโครงสร้างข้อมูลที่ได้จากการสกัดรายงานอุบัติเหตุ C00013 โดย Schema-guided LLM}}{24}{figure.4.1}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces \xpg@aux {}{thai}ตัวอย่างส่วนหนึ่งของ Knowledge Graph ที่แสดงความสัมพันธ์ของเอนทิตีในอุบัติเหตุ C00013}}{25}{figure.4.2}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces \xpg@aux {}{thai}Knowledge Graph หลังจากผ่าน Inference Engine โดยมีการสร้างความสัมพันธ์ใหม่ (เส้นสีแดง) เพื่อระบุว่าเหตุการณ์ฝ่าไฟแดงเป็น Edge-Case ที่ตรงกับ ODD Modular "การฝ่าฝืนสัญญาณจราจร"}}{26}{figure.4.3}%
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {5.1}{\ignorespaces \xpg@aux {}{thai}ตัวอย่างชุดพารามิเตอร์ที่มีโครงสร้างซึ่งถูกสกัดจากรายงานอุบัติเหตุ C00013}}{32}{figure.5.1}%
+\contentsline {figure}{\numberline {5.2}{\ignorespaces \xpg@aux {}{thai}ภาพจากสถานการณ์จำลองของกรณีศึกษา C00013 ที่สร้างขึ้นจากพารามิเตอร์ของระบบ (ซ้าย: มุมมองด้านหน้า, ขวา: มุมมองด้านหน้าขณะชน)}}{32}{figure.5.2}%
 \addvspace {10\p@ }
