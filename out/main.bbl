@@ -1,15 +1,26 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
+
+\bibitem{liyan2022analysis}
+L.~Zhang, M.~Tang, J.~Ma, J.~Duan, X.~Sun, J.~Hu, X.~Xu, and X.~Suchuan,
+  ``Analysis of traffic accident based on knowledge graph,'' {\em Journal of
+  Advanced Transportation}, vol.~2022, 2022.
+
+\bibitem{jama2022framework}
+{Japan Automobile Manufacturers Association, Inc.}, ``{Automated Driving Safety
+  Evaluation Framework Ver 3.0},'' tech. rep., Japan Automobile Manufacturers
+  Association, Inc., Dec 2022.
+\newblock Accessed: Aug 29, 2025.
+
+\bibitem{chang2023llmscenario}
+C.~Chang, S.~Wang, J.~Zhang, J.~Ge, and L.~Li, ``Llmscenario: Large language
+  model driven scenario generation,'' {\em arXiv preprint arXiv:2310.19639},
+  2023.
 
 \bibitem{khot2024prompting}
 T.~Khot, S.~G. Ugare, M.~Goenka, S.~Singh, H.~R. Trivedi, A.~Sabharwal, {\em
   et~al.}, ``Prompting large language models with divide-and-conquer program
   for discerning problem solving.'' arXiv preprint arXiv:2310.03153, 2024.
 \newblock Accessed: Aug 31, 2025.
-
-\bibitem{liyan2022analysis}
-L.~Zhang, M.~Tang, J.~Ma, J.~Duan, X.~Sun, J.~Hu, X.~Xu, and X.~Suchuan,
-  ``Analysis of traffic accident based on knowledge graph,'' {\em Journal of
-  Advanced Transportation}, vol.~2022, 2022.
 
 \bibitem{nhtsa_ciren}
 {National Highway Traffic Safety Administration (NHTSA)}, ``{Crash Injury
@@ -27,5 +38,19 @@ G.~Bagschik, T.~Menzel, and M.~Maurer, ``Ontology based scene creation for the
   development of automated vehicles,'' in {\em 2018 21st International
   Conference on Intelligent Transportation Systems (ITSC)}, pp.~756--761, IEEE,
   2018.
+
+\bibitem{koopman2017autonomous}
+P.~Koopman and M.~Wagner, ``Autonomous vehicle safety: An interdisciplinary
+  challenge,'' in {\em 2017 IEEE International Conference on Vehicular
+  Electronics and Safety (ICVES)}, pp.~1--6, IEEE, 2017.
+
+\bibitem{openai2024gpt4o}
+{OpenAI}, ``Gpt-4o.'' \url{https://openai.com/index/hello-gpt-4o/}, 2024.
+\newblock Accessed: October 15, 2025.
+
+\bibitem{neo4j}
+{Neo4j, Inc.}, ``{Neo4j Graph Database Platform}.'' \url{https://neo4j.com},
+  2025.
+\newblock Accessed: Oct 15, 2025.
 
 \end{thebibliography}

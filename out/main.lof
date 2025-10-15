@@ -1,5 +1,12 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {2.1}{\ignorespaces \xpg@aux {}{thai}ตัวอย่าง Edge Case ที่ซับซ้อนจากรายงานอุบัติเหตุจริง (CIREN) แสดงลำดับเหตุการณ์ที่นำไปสู่การชนประสานงา}}{9}{figure.2.1}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces \xpg@aux {}{thai}ตัวอย่าง Ontology ของ Knowledge Graph ที่ใช้ในการจำลองความสัมพันธ์ของปัจจัยต่างๆ ในอุบัติเหตุจราจร (ดัดแปลงจาก \cite {liyan2022analysis})}}{10}{figure.2.2}%
+\contentsline {figure}{\numberline {2.3}{\ignorespaces \xpg@aux {}{thai}ตัวอย่างการจำแนกสถานการณ์ตามกรอบการทำงาน ODD ของ JAMA \cite {jama2022framework}}}{11}{figure.2.3}%
+\contentsline {figure}{\numberline {2.4}{\ignorespaces \xpg@aux {}{thai}การกระจายตัวของสถานการณ์ที่แสดงให้เห็นถึงความหนาแน่นของ Normal Safe Scenarios (กลุ่มสีแดงตรงกลาง) เทียบกับ Extreme Risky Scenarios ที่กระจัดกระจาย ซึ่งชี้ให้เห็นถึงความยากในการค้นพบเหตุการณ์หายาก (ดัดแปลงจาก \cite {chang2023llmscenario})}}{12}{figure.2.4}%
+\contentsline {figure}{\numberline {2.5}{\ignorespaces \xpg@aux {}{thai}แผนภาพสถาปัตยกรรมภาพรวมของกรอบการทำงาน ที่แสดงการบูรณาการ ODD, Knowledge Graph, และ LLM เข้าด้วยกันเพื่อสร้างชุดทดสอบ}}{12}{figure.2.5}%
+\contentsline {figure}{\numberline {2.6}{\ignorespaces \xpg@aux {}{thai}ตัวอย่างกรณีศึกษาและคำอธิบายเหตุการณ์จากฐานข้อมูล CIREN (Case \#1-10-2017-003-09)}}{13}{figure.2.6}%
+\contentsline {figure}{\numberline {2.7}{\ignorespaces \xpg@aux {}{thai}ตัวอย่างกรณีศึกษาและคำอธิบายเหตุการณ์จากฐานข้อมูล GIDAS}}{14}{figure.2.7}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
