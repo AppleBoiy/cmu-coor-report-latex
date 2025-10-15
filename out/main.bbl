@@ -1,0 +1,31 @@
+\begin{thebibliography}{1}
+
+\bibitem{khot2024prompting}
+T.~Khot, S.~G. Ugare, M.~Goenka, S.~Singh, H.~R. Trivedi, A.~Sabharwal, {\em
+  et~al.}, ``Prompting large language models with divide-and-conquer program
+  for discerning problem solving.'' arXiv preprint arXiv:2310.03153, 2024.
+\newblock Accessed: Aug 31, 2025.
+
+\bibitem{liyan2022analysis}
+L.~Zhang, M.~Tang, J.~Ma, J.~Duan, X.~Sun, J.~Hu, X.~Xu, and X.~Suchuan,
+  ``Analysis of traffic accident based on knowledge graph,'' {\em Journal of
+  Advanced Transportation}, vol.~2022, 2022.
+
+\bibitem{nhtsa_ciren}
+{National Highway Traffic Safety Administration (NHTSA)}, ``{Crash Injury
+  Research and Engineering Network (CIREN) Database}.'' U.S. Department of
+  Transportation, 2025.
+\newblock Accessed: Aug 28, 2025.
+
+\bibitem{gidas_study}
+{German In-Depth Accident Study (GIDAS)}, ``{German In-Depth Accident Study
+  (GIDAS)},'' 2025.
+\newblock Accessed: Aug 28, 2025.
+
+\bibitem{bagschik2018ontology}
+G.~Bagschik, T.~Menzel, and M.~Maurer, ``Ontology based scene creation for the
+  development of automated vehicles,'' in {\em 2018 21st International
+  Conference on Intelligent Transportation Systems (ITSC)}, pp.~756--761, IEEE,
+  2018.
+
+\end{thebibliography}

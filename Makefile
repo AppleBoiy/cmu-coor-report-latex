@@ -5,8 +5,21 @@ MAIN=main
 OUTDIR=out
 PDF=$(OUTDIR)/$(MAIN).pdf
 
+# Select engine: xelatex (default), lualatex, or pdflatex
+ENGINE ?= xelatex
+
 LATEXMK=latexmk
-LATEXMK_FLAGS=-pdf -interaction=nonstopmode -halt-on-error -file-line-error -outdir=$(OUTDIR)
+# Base flags for latexmk; engine flag added via LATEXMK_ENGINE_FLAG
+LATEXMK_FLAGS=-interaction=nonstopmode -halt-on-error -file-line-error -outdir=$(OUTDIR)
+
+# Choose engine flag for latexmk
+ifeq ($(ENGINE),xelatex)
+LATEXMK_ENGINE_FLAG=-xelatex
+else ifeq ($(ENGINE),lualatex)
+LATEXMK_ENGINE_FLAG=-lualatex
+else
+LATEXMK_ENGINE_FLAG=-pdf
+endif
 
 # Detect whether latexmk is available; if not, fallback commands will be used
 HAVE_LATEXMK:=$(shell command -v $(LATEXMK) >/dev/null 2>&1 && echo yes || echo no)
@@ -16,8 +29,14 @@ TECTONIC=tectonic
 TECTONIC_FLAGS=-X compile --outdir $(OUTDIR) --synctex --keep-logs
 HAVE_TECTONIC:=$(shell command -v $(TECTONIC) >/dev/null 2>&1 && echo yes || echo no)
 
-# Fallback tools
+# Fallback tools (engine-aware)
+ifeq ($(ENGINE),xelatex)
+PDFLATEX=xelatex
+else ifeq ($(ENGINE),lualatex)
+PDFLATEX=lualatex
+else
 PDFLATEX=pdflatex
+endif
 BIBTEX=bibtex
 PDFLATEX_FLAGS=-interaction=nonstopmode -halt-on-error -file-line-error -output-directory=$(OUTDIR)
 
@@ -35,7 +54,7 @@ pdf: $(PDF)
 $(PDF): $(TEX_SOURCES) $(BIB_SOURCES)
 ifeq ($(HAVE_LATEXMK),yes)
 	@mkdir -p $(OUTDIR)
-	$(LATEXMK) $(LATEXMK_FLAGS) $(MAIN).tex
+	$(LATEXMK) $(LATEXMK_ENGINE_FLAG) $(LATEXMK_FLAGS) $(MAIN).tex
 
 else
 ifeq ($(HAVE_TECTONIC),yes)
