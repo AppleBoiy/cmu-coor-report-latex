@@ -39,7 +39,7 @@
 \contentsline {chapter}{\numberline {2}เอกสารและงานวิจัยที่เกี่ยวข้อง}{6}{chapter.2}%
 \contentsline {paragraph}{}{6}{paragraph*.19}%
 \contentsline {section}{\numberline {2.1}แนวคิดพื้นฐานและทฤษฎีที่เกี่ยวข้อง}{6}{section.2.1}%
-\contentsline {subsection}{\numberline {2.1.1}Operational Design Domain (ODD)}{6}{subsection.2.1.1}%
+\contentsline {subsection}{\numberline {2.1.1}Operational Design Domain}{6}{subsection.2.1.1}%
 \contentsline {paragraph}{}{6}{paragraph*.20}%
 \contentsline {subsection}{\numberline {2.1.2}Knowledge Graph (KG)}{6}{subsection.2.1.2}%
 \contentsline {paragraph}{}{6}{paragraph*.21}%
@@ -47,7 +47,7 @@
 \contentsline {paragraph}{}{6}{paragraph*.22}%
 \contentsline {subsection}{\numberline {2.1.4}Large Language Model}{7}{subsection.2.1.4}%
 \contentsline {paragraph}{}{7}{paragraph*.23}%
-\contentsline {subsection}{\numberline {2.1.5}Schema-guided Large Language Model (LLM)}{7}{subsection.2.1.5}%
+\contentsline {subsection}{\numberline {2.1.5}Schema-guided Large Language Model}{7}{subsection.2.1.5}%
 \contentsline {paragraph}{}{7}{paragraph*.24}%
 \contentsline {paragraph}{}{8}{paragraph*.25}%
 \contentsline {subsection}{\numberline {2.1.6}Edge-Case Discovery Efficiency}{8}{subsection.2.1.6}%
